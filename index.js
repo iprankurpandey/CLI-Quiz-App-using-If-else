@@ -126,14 +126,14 @@ else if (answerInput_questionFive == 1||3){
   scoreCard =scoreCard-1;
   console.log("you got"+" "+ scoreCard +" "+"Pizza🍕")
 }
-if (scoreCard == 10 ||9|| 8){
+if (scoreCard == 10 ){
   console.log("you are best friend")
 }
-else if (scoreCard == 7 ||6|| 5)
+else if (scoreCard == 9 || 8 || 7 || 6)
 {
   console.log("you are friend")
 }
-else if(scoreCard == 4||3||2) {
+else if(scoreCar<= 5 ) {
   console.log("we could be friends")
 }
 else{
