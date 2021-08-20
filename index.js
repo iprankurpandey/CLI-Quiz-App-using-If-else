@@ -35,11 +35,12 @@ let answerInput_questionOne = readlineSync.question(questionOne_option1 ,questio
 if (answerInput_questionOne == 1){
   console.log("you are right")
   scoreCard =scoreCard+2;
-  console.log(scoreCard)
+  console.log("you got"+" "+scoreCard+" "+"Pizza🍕🍕")
 }
 else if (answerInput_questionOne == 2 || 3){
   console.log("you are wrong")
   scoreCard =scoreCard-1;
+  console.log("you got"+" "+scoreCard+" "+"Pizza🍕")
   
 }
 else{
@@ -56,11 +57,13 @@ let answerInput_questionTwo = readlineSync.question(questionTwo_option1 ,questio
 if (answerInput_questionTwo == 3){
   console.log("you are right")
   scoreCard =scoreCard+2;
+  console.log("you got"+" "+scoreCard+" "+"Pizza🍕🍕")
  
 }
 else if (answerInput_questionTwo == 1 || 2){
   console.log("you are wrong")
   scoreCard =scoreCard-1;
+  console.log("you got"+" "+scoreCard+" "+"Pizza🍕")
  
 }
 else{
@@ -76,9 +79,13 @@ let questionThree_option3=  console.log("[3] Sandeep")
 let answerInput_questionThree = readlineSync.question(questionThree_option1 ,questionThree_option2,questionThree_option3)
 if (answerInput_questionThree == 2||3){
   console.log("you are right")
+  scoreCard =scoreCard+2;
+  console.log("you got"+" "+scoreCard+" "+"Pizza🍕🍕")
 }
 else if (answerInput_questionThree == 1){
   console.log("you are wrong")
+  scoreCard =scoreCard-1;
+  console.log("you got"+" "+scoreCard+" "+"Pizza🍕")
 }
 else{
   console.log("Invalid Input")
@@ -93,9 +100,13 @@ let questionFour_option3=  console.log("[3] Burger")
 let answerInput_questionFour = readlineSync.question(questionFour_option1 ,questionFour_option2,questionFour_option3)
 if (answerInput_questionFour == 2){
   console.log("you are right")
+  scoreCard =scoreCard+2;
+  console.log("you got"+" "+scoreCard+" "+"Pizza🍕🍕")
 }
 else if (answerInput_questionFour == 1||3){
   console.log("you are wrong")
+  scoreCard =scoreCard-1;
+  console.log("you got"+" "+scoreCard+" "+"Pizza🍕")
 }
 else{
   console.log("Invalid Input")
@@ -110,15 +121,19 @@ let questionFive_option3=  console.log("[3] Spanish")
 let answerInput_questionFive = readlineSync.question(questionFive_option1 ,questionFive_option2,questionFour_option3)
 if (answerInput_questionFive == 2){
   console.log("you are right")
+  scoreCard =scoreCard+2;
+  console.log("you got"+" "+scoreCard+" "+"Pizza🍕🍕")
 }
 else if (answerInput_questionFive == 1||3){
   console.log("you are wrong")
+  scoreCard =scoreCard-1;
+  console.log("you got"+" "+scoreCard+" "+"Pizza🍕")
 }
 else{
   console.log("Invalid Input")
 }
 
-
+console.log("")
 
 
 
