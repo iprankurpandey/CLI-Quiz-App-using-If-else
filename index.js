@@ -35,7 +35,7 @@ let answerInput_questionOne = readlineSync.question(questionOne_option1 ,questio
 if (answerInput_questionOne == 1){
   console.log("you are right")
   scoreCard =scoreCard+2;
-  console.log(sc
+  console.log(scoreCard)
 }
 else if (answerInput_questionOne == 2 || 3){
   console.log("you are wrong")
