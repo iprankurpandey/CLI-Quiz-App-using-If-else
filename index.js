@@ -1,4 +1,4 @@
-const chalk =require('chalk')
+ const chalk =require('chalk')
 const readlineSync = require('readline-sync')
 
 console.log(chalk.green.bgBlue.bold("Lets find out how well do you know me!!! 🙈"))
@@ -47,45 +47,42 @@ else{
   console.log("Invalid Input")
 }
 console.log("\t")
-
-const questionTwo =console.log("2)Where do I live?")
-let questionTwo_option1 = console.log("[1] Pune")
-let questionTwo_option2=  console.log("[2] Banglore")
-let questionTwo_option3=  console.log("[3] Satna")
+const questionTwo =console.log("1) Where do I live?")
+let questionTwo_option1 = console.log("[1] Banglore")
+let questionTwo_option2 = console.log("[2] Pune")
+let questionTwo_option3 = console.log("[3] Satna")
 
 let answerInput_questionTwo = readlineSync.question(questionTwo_option1 ,questionTwo_option2,questionTwo_option3)
 if (answerInput_questionTwo == 3){
   console.log("you are right")
   scoreCard =scoreCard+2;
   console.log("you got"+" "+scoreCard+" "+"Pizza🍕🍕")
- 
 }
-else if (answerInput_questionTwo == 1 || 2){
+else if (answerInput_questionTwo == 2 || 3){
   console.log("you are wrong")
   scoreCard =scoreCard-1;
   console.log("you got"+" "+scoreCard+" "+"Pizza🍕")
- 
+  
 }
 else{
   console.log("Invalid Input")
 }
 console.log("\t")
-
-const questionThree =console.log("3)Who is my best friend?")
-let questionThree_option1 = console.log("[1] Anurag")
-let questionThree_option2=  console.log("[2] Prateek")
-let questionThree_option3=  console.log("[3] Sandeep")
+const questionThree       =  console.log("3)Who is my best friend?")
+let questionThree_option1 =  console.log("[1] Gajendra")
+let questionThree_option2 =  console.log("[2] Prateek")
+let questionThree_option3 =  console.log("[3] Anurag")
 
 let answerInput_questionThree = readlineSync.question(questionThree_option1 ,questionThree_option2,questionThree_option3)
-if (answerInput_questionThree == 2||3){
-  console.log("you are right")
-  scoreCard =scoreCard+2;
-  console.log("you got"+" "+scoreCard+" "+"Pizza🍕🍕")
-}
-else if (answerInput_questionThree == 1){
+if (answerInput_questionThree == 1){
   console.log("you are wrong")
   scoreCard =scoreCard-1;
   console.log("you got"+" "+scoreCard+" "+"Pizza🍕")
+}
+else if (answerInput_questionThree == 2||3){
+  console.log("you are right")
+  scoreCard =scoreCard+2;
+  console.log("you got"+" "+scoreCard+" "+"Pizza🍕🍕")
 }
 else{
   console.log("Invalid Input")
@@ -127,13 +124,20 @@ if (answerInput_questionFive == 2){
 else if (answerInput_questionFive == 1||3){
   console.log("you are wrong")
   scoreCard =scoreCard-1;
-  console.log("you got"+" "+scoreCard+" "+"Pizza🍕")
+  console.log("you got"+" "+ scoreCard +" "+"Pizza🍕")
+}
+if (scoreCard == 10 ||9|| 8){
+  console.log("you are best friend")
+}
+else if (scoreCard == 7 ||6|| 5)
+{
+  console.log("you are friend")
+}
+else if(scoreCard == 4||3||2) {
+  console.log("we could be friends")
 }
 else{
   console.log("Invalid Input")
 }
 
-console.log("")
-
-
-
+console.log("\t")
