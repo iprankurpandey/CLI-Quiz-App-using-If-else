@@ -1,4 +1,4 @@
- const chalk =require('chalk')
+const chalk =require('chalk')
 const readlineSync = require('readline-sync')
 
 console.log(chalk.green.bgBlue.bold("Lets find out how well do you know me!!! 🙈"))
@@ -18,7 +18,6 @@ console.log("\t")
   console.log("(b) for every wrong answer you will get "+ (chalk.red("1 Pizza 🍕."))) 
   console.log(chalk.yellow("(c) this is just a game, I dont get offended you don't know me, cheers❤ !!"))
   console.log("(d)Enter 1/ 2/ 3 for each question to answer")
-  
 }
 // else if (userInput == ENTER) {
 //     console.log("PLAY THE GAME")
@@ -127,17 +126,17 @@ else if (answerInput_questionFive == 1||3){
   console.log("you got"+" "+ scoreCard +" "+"Pizza🍕")
 }
 if (scoreCard == 10 ){
-  console.log("you are best friend")
+  console.log("you know me very well")
 }
-else if (scoreCard == 9 || 8 || 7 || 6)
+else if (scoreCard < 0){
+console.log("you have scored"+chalk.red("zero")+" because your socre (pizzas) is in negative values")
+}
+else if (scoreCard <10)
 {
-  console.log("you are friend")
+  console.log("you know  me  ")
 }
-else if(scoreCar<= 5 ) {
+else {
   console.log("we could be friends")
 }
-else{
-  console.log("Invalid Input")
-}
-
 console.log("\t")
+console.log("thanks for taking the quiz ,your final (pizza)score is : " + scoreCard)
